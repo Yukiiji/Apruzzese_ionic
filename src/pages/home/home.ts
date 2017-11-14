@@ -10,7 +10,7 @@ export class HomePage {
   clickmessage: String;
 
   Clickme(){
-    this.clickmessage="Bienvenue";
+    this.clickmessage="BRAVO";
   }
   constructor(public navCtrl: NavController) {
     this.app=new AppData("nom app", 0.3);
