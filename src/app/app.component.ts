@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import { GeolocPage } from '../pages/geoloc/geoloc';
 
 @Component({
   templateUrl: 'app.html'
