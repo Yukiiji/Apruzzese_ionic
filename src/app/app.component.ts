@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { GeolocPage } from '../pages/geoloc/geoloc';
+import { ApplicationsPage } from '../pages/applications/applications';
 
 @Component({
   templateUrl: 'app.html'

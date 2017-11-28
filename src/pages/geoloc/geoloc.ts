@@ -16,7 +16,17 @@ import { Geolocation } from '@ionic-native/Geolocation';
 })
 export class GeolocPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  Latitude:number;
+  Longitude:number;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,private geolocation: Geolocation) {
+
+    this.geolocation.getCurrentPosition().then((resp) => {
+     this.Latitude = resp.coords.latitude;
+     this.Longitude = resp.coords.longitude;
+    }).catch((error) => {
+      console.log('Error getting location', error);
+    });
   }
 
   ionViewDidLoad() {
